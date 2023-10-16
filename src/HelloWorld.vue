@@ -8,8 +8,8 @@
       <v-container class="pt-5 elevation-24 border rounded-xl"
         :style="{ 'background-image': 'url(\'../public/plant2.jpg\')', 'background-size': 'cover' }">
 
-        <h2 class="font1 d-flex align-center justify-center text-white bg-black border rounded-xl">
-          <span :class="smAndDown ? '' : 'pl-5'">PATOLOGIAS TRATADAS COM A CANNABIS</span>
+        <h2 class="font1 d-flex align-center justify-center text-white bg-black border rounded-xl"
+          :class="smAndDown ? '' : 'pl-5'">PATOLOGIAS TRATADAS COM A CANNABIS
         </h2>
 
         <br>
@@ -561,21 +561,16 @@
 </style>
 
 
-<script>
+<script setup>
+import { useDisplay } from 'vuetify';
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiCannabis, mdiGithub } from '@mdi/js';
 
-export default {
-  components: {
-    SvgIcon
-  },
-  data() {
-    return {
-      path: mdiCannabis,
-      path1: mdiGithub,
-      items: ['Estados Unidos', 'Israel', 'Colômbia', 'Holanda', 'México', 'Uruguai', 'Espanha', 'Alemanha',],
-    }
-  }
-}
+const { smAndDown } = useDisplay()
+ 
+const path = mdiCannabis;
+const path1 = mdiGithub;
+const items = ['Estados Unidos', 'Israel', 'Colômbia', 'Holanda', 'México', 'Uruguai', 'Espanha', 'Alemanha']
+
 </script>
 

@@ -373,8 +373,8 @@
 
 
 <script setup>
-import HelloWorld from '@/HelloWorld.vue'
-import { useDisplay } from 'vuetify'
+import HelloWorld from '@/HelloWorld.vue';
+import { useDisplay } from 'vuetify';
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiCannabis, mdiCommentAccountOutline, mdiFileDocument, mdiInstagram } from '@mdi/js';
 
