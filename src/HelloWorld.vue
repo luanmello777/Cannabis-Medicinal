@@ -6,7 +6,7 @@
 
 
       <v-container class="pt-5 elevation-24 border rounded-xl"
-        :style="{ 'background-image': 'url(\'./public/plant2.jpg\')', 'background-size': 'cover' }">
+        :style="{ 'background-image': 'url(\'plant2.jpg\')', 'background-size': 'cover' }">
 
         <h2 class="font1 d-flex align-center justify-center text-white bg-black border rounded-xl"
           :class="smAndDown ? '' : 'pl-5'">PATOLOGIAS TRATADAS COM A CANNABIS
@@ -339,7 +339,7 @@
       <br>
 
       <v-container class="mt-7 pt-5 elevation-24 border rounded-xl"
-        :style="{ 'background-image': 'url(\'./public/fundo2.jpg\')', 'background-size': 'cover' }">
+        :style="{ 'background-image': 'url(\'fundo2.jpg\')', 'background-size': 'cover' }">
 
 
         <h2 class="font1 d-flex align-center justify-center text-white bg-black border rounded-xl"><span

@@ -36,7 +36,7 @@
 
         <template v-slot:default="{ isActive }">
           <v-card title="Site de referência:" color="#1B5E20"
-            :style="{ 'background-image': 'url(\'./public/fundo.jpg\')', 'background-size': 'cover' }">
+            :style="{ 'background-image': 'url(\'fundo.jpg\')', 'background-size': 'cover' }">
             <div class="text-center mt-5">
               <v-btn color="#C6FF00" href="https://www.cannabisativa.info/" target="_blank"><svg-icon type="mdi"
                   :path="path3" class="mr-3"></svg-icon>CANNABISATIVA.INFO</v-btn>
@@ -208,7 +208,7 @@
         <br>
 
         <v-container class="text-white mt-10 pt-5 elevation-24 border rounded-xl"
-          :style="{ 'background-image': 'url(\'./public/plant1.jpg\')', 'background-size': 'cover' }">
+          :style="{ 'background-image': 'url(\'plant1.jpg\')', 'background-size': 'cover' }">
           <h2 class="font1 d-flex align-center justify-center w-45 border rounded-xl bg-black">ESPÉCIES DE CANNABIS</h2>
           <br>
 
