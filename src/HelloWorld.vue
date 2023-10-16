@@ -253,9 +253,9 @@
                   </v-card>
                 </template>
               </v-dialog>
-
             </div>
           </div>
+          <br>
       </v-container>
 
       <v-container class="bg-green-darken-4 mt-12 pt-5 elevation-24 border rounded-xl">

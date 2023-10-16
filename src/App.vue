@@ -24,7 +24,7 @@
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
-        
+
 
 
         <v-dialog width="500">
@@ -210,98 +210,97 @@
           <h2 class="font1 d-flex align-center justify-center w-45 border rounded-xl bg-black">ESPÉCIES DE CANNABIS</h2>
           <br>
 
-          
-            <div class="ma-7 pb-3 d-flex justify-space-between" :class="smAndDown ? 'mr-auto ml-auto pb-3' : ''">
-              <div style="width: 100px; height: 100px" class="elevation-15">
-                <v-img src="../public/four.png" alt="buddie de cannabis" width="100" height="100" class="rounded"></v-img>
 
-                <v-dialog width="500">
-                  <template v-slot:activator="{ props }">
-                    <v-btn color="#C6FF00" width="300" class="mt-2" v-bind="props" text="SATIVA"> </v-btn>
-                  </template>
+          <div class="ma-7 pb-3 d-flex justify-space-between" :class="smAndDown ? 'mr-auto ml-auto pb-3' : ''">
+            <div style="width: 100px; height: 100px" class="elevation-15">
+              <v-img src="../public/four.png" alt="buddie de cannabis" width="100" height="100" class="rounded"></v-img>
 
-                  <template v-slot:default="{ isActive }">
-                    <v-card title="Sativa">
-                      <v-card-text>
-                        <v-list>
-                          <v-list-item v-for="(item, index) in items" :key="index">
-                            <v-icon class="mr-2" color="#AEEA00">mdi-check-circle</v-icon>
-                            {{ item }}
-                          </v-list-item>
-                        </v-list>
-                      </v-card-text>
+              <v-dialog width="500">
+                <template v-slot:activator="{ props }">
+                  <v-btn color="#C6FF00" width="300" class="mt-2" v-bind="props" text="SATIVA"> </v-btn>
+                </template>
 
-                      <v-card-actions>
-                        <v-spacer></v-spacer>
+                <template v-slot:default="{ isActive }">
+                  <v-card title="Sativa">
+                    <v-card-text>
+                      <v-list>
+                        <v-list-item v-for="(item, index) in items" :key="index">
+                          <v-icon class="mr-2" color="#AEEA00">mdi-check-circle</v-icon>
+                          {{ item }}
+                        </v-list-item>
+                      </v-list>
+                    </v-card-text>
 
-                        <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </template>
-                </v-dialog>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
 
-              </div>
-              <div style="width: 100px; height: 100px" class="elevation-15">
-                <v-img src="../public/five.png" alt="buddie de cannabis" width="100" height="100" class="rounded"></v-img>
+                      <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </template>
+              </v-dialog>
 
-                <v-dialog width="500">
-                  <template v-slot:activator="{ props }">
-                    <v-btn color="#C6FF00" width="300" class="mt-2" v-bind="props" text="INDICA"> </v-btn>
-                  </template>
-
-                  <template v-slot:default="{ isActive }">
-                    <v-card title="Indica">
-                      <v-card-text>
-                        <v-list>
-
-                          <v-list-item v-for="(item, index) in items1" :key="index">
-                            <v-icon class="mr-2" color="#AEEA00">mdi-check-circle</v-icon>
-                            {{ item }}
-                          </v-list-item>
-
-                        </v-list>
-                      </v-card-text>
-
-                      <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </template>
-                </v-dialog>
-              </div>
-              <div style="width: 100px; height: 100px" class="elevation-15">
-                <v-img src="../public/six.png" alt="buddie de cannabis" width="100" height="100" class="rounded"></v-img>
-
-
-                <v-dialog width="500">
-                  <template v-slot:activator="{ props }">
-                    <v-btn color="#C6FF00" width="300" class="mt-2" v-bind="props" text="RUDERALIS"> </v-btn>
-                  </template>
-
-                  <template v-slot:default="{ isActive }">
-                    <v-card title="Ruderalis">
-                      <v-card-text>
-
-                        <v-list>
-                          <v-list-item v-for="(item, index) in items2" :key="index">
-                            <v-icon class="mr-2" color="#AEEA00">mdi-check-circle</v-icon>
-                            {{ item }}
-                          </v-list-item>
-                        </v-list>
-
-                      </v-card-text>
-
-                      <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </template>
-                </v-dialog>
-
-              </div>
             </div>
+            <div style="width: 100px; height: 100px" class="elevation-15">
+              <v-img src="../public/five.png" alt="buddie de cannabis" width="100" height="100" class="rounded"></v-img>
+
+              <v-dialog width="500">
+                <template v-slot:activator="{ props }">
+                  <v-btn color="#C6FF00" width="300" class="mt-2" v-bind="props" text="INDICA"> </v-btn>
+                </template>
+
+                <template v-slot:default="{ isActive }">
+                  <v-card title="Indica">
+                    <v-card-text>
+                      <v-list>
+
+                        <v-list-item v-for="(item, index) in items1" :key="index">
+                          <v-icon class="mr-2" color="#AEEA00">mdi-check-circle</v-icon>
+                          {{ item }}
+                        </v-list-item>
+
+                      </v-list>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </template>
+              </v-dialog>
+            </div>
+            <div style="width: 100px; height: 100px" class="elevation-15">
+              <v-img src="../public/six.png" alt="buddie de cannabis" width="100" height="100" class="rounded"></v-img>
+
+
+              <v-dialog width="500">
+                <template v-slot:activator="{ props }">
+                  <v-btn color="#C6FF00" width="300" class="mt-2" v-bind="props" text="RUDERALIS"> </v-btn>
+                </template>
+
+                <template v-slot:default="{ isActive }">
+                  <v-card title="Ruderalis">
+                    <v-card-text>
+
+                      <v-list>
+                        <v-list-item v-for="(item, index) in items2" :key="index">
+                          <v-icon class="mr-2" color="#AEEA00">mdi-check-circle</v-icon>
+                          {{ item }}
+                        </v-list-item>
+                      </v-list>
+
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </template>
+              </v-dialog>
+            </div>
+          </div>
         </v-container>
 
         <br>
@@ -332,8 +331,8 @@
 
             <v-img src="../public/med1.jpg" alt="médico e cannabis medicinal" width="150" height="125"
               class="rounded"></v-img>
-            <v-img src="../public/med2.jpg" alt="médico e cannabis medicinal" width="150" height="125"
-              class="rounded" :class="smAndDown ? 'w-0 h-0' : ''"></v-img>
+            <v-img src="../public/med2.jpg" alt="médico e cannabis medicinal" width="150" height="125" class="rounded"
+              :class="smAndDown ? 'w-0 h-0' : ''"></v-img>
             <v-img src="../public/med3.jpg" alt="médico e cannabis medicinal" width="150" height="125"
               class="rounded"></v-img>
 
