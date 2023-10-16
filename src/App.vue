@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar color="#1B5E20">
       <div class="d-flex align-center justify-space-between w-100">
-        <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? 'mr-2 w-0' : 'ml-5'" width="45"
+        <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? 'mr-2 w-0 h-0' : 'ml-5'" width="45"
           height="50"></v-img>
 
         <v-spacer></v-spacer>
@@ -104,7 +104,7 @@
 
 
             <v-card-text>
-              <div class="ma-7 d-flex justify-space-between" :class="smAndDown ? 'ma-7 d-flex justify-space-between' : ''">
+              <div class="ma-7 d-flex justify-space-between" :class="smAndDown ? 'ma-7 d-flex justify-space-between' : 'ma-7 d-flex justify-space-between'">
                 <div style="width: 100px; height: 100px" class="elevation-15">
                   <v-img src="../src/assets/images/one.jpg" alt="buddie de cannabis" width="300" height="200"
                     class="rounded"></v-img>
