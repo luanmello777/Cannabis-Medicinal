@@ -68,13 +68,13 @@
 
           <v-carousel height="560" cycle hide-delimiter-background :show-arrows="false" color="#C6FF00" class="rounded">
 
-            <v-carousel-item src="./public/foto1.jpg" cover></v-carousel-item>
+            <v-carousel-item src="foto1.jpg" cover></v-carousel-item>
 
-            <v-carousel-item src="./public/foto2.jpg" cover></v-carousel-item>
+            <v-carousel-item src="foto2.jpg" cover></v-carousel-item>
 
-            <v-carousel-item src="./public/foto3.jpg" cover></v-carousel-item>
+            <v-carousel-item src="foto3.jpg" cover></v-carousel-item>
 
-            <v-carousel-item src="./public/foto4.jpg" cover></v-carousel-item>
+            <v-carousel-item src="foto4.jpg" cover></v-carousel-item>
 
           </v-carousel>
 
