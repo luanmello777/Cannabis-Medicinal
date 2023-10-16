@@ -2,58 +2,57 @@
   <v-app>
     <v-app-bar color="#1B5E20">
       <div class="d-flex align-center justify-space-between w-100">
-      <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? 'mr-2 w-0' : 'ml-5'" width="45" height="50"></v-img>
+        <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? 'mr-2 w-0' : 'ml-5'" width="45"
+          height="50"></v-img>
 
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-
-
-      <v-chip 
-      :class="smAndDown ? 'pl-16 pr-16 text-center justify-center' : 'mr-10'"
-      class="chipcannabis  elevation-10 text-h5" size="x-large">
-        <v-app-bar-title class="ml-10 mr-10">
-          <div :class="smAndDown ? 'text-h6-center' : 'text-h5'">
-            <span 
-            class="font span"
-            >Cannabis
-              <svg-icon color="#C6FF00" type="mdi" :path="path"></svg-icon>
-              Medicinal</span>
-          </div>
-        </v-app-bar-title>
-      </v-chip>
-
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
 
 
-      <v-dialog width="500">
-        <template v-slot:activator="{ props }">
-          <v-btn :class="smAndDown ? 'ml-8' : 'mr-10'"
-            class="btnref border rounded-xl elevation-10 mr-10 bg-lime-accent-3" v-bind="props" text="Referência"></v-btn>
-        </template>
-
-        <template v-slot:default="{ isActive }">
-          <v-card title="Site de referência:" color="#1B5E20"
-            :style="{ 'background-image': 'url(\'fundo.jpg\')', 'background-size': 'cover' }">
-            <div class="text-center mt-5">
-              <v-btn color="#C6FF00" href="https://www.cannabisativa.info/" target="_blank"><svg-icon type="mdi"
-                  :path="path3" class="mr-3"></svg-icon>CANNABISATIVA.INFO</v-btn>
+        <v-chip :class="smAndDown ? 'pl-16 pr-16 text-center justify-center' : 'mr-10'"
+          class="chipcannabis  elevation-10 text-h5" size="x-large">
+          <v-app-bar-title class="ml-10 mr-10">
+            <div :class="smAndDown ? 'text-h6-center' : 'text-h5'">
+              <span class="font span">Cannabis
+                <svg-icon color="#C6FF00" type="mdi" :path="path"></svg-icon>
+                Medicinal</span>
             </div>
+          </v-app-bar-title>
+        </v-chip>
 
-            <div class="text-center mt-5">
-              <v-btn color="#C6FF00" href="https://www.instagram.com/cannabisativa.info/" target="_blank"><svg-icon
-                  type="mdi" :path="path4" class="mr-3"></svg-icon>CANNABISATIVA.INFO
-              </v-btn>
-            </div>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
-            </v-card-actions>
-          </v-card>
-        </template>
-      </v-dialog>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+
+
+        <v-dialog width="500">
+          <template v-slot:activator="{ props }">
+            <v-btn :class="smAndDown ? 'ml-8' : 'mr-10'"
+              class="btnref border rounded-xl elevation-10 mr-10 bg-lime-accent-3" v-bind="props"
+              text="Referência"></v-btn>
+          </template>
+
+          <template v-slot:default="{ isActive }">
+            <v-card title="Site de referência:" color="#1B5E20"
+              :style="{ 'background-image': 'url(\'fundo.jpg\')', 'background-size': 'cover' }">
+              <div class="text-center mt-5">
+                <v-btn color="#C6FF00" href="https://www.cannabisativa.info/" target="_blank"><svg-icon type="mdi"
+                    :path="path3" class="mr-3"></svg-icon>CANNABISATIVA.INFO</v-btn>
+              </div>
+
+              <div class="text-center mt-5">
+                <v-btn color="#C6FF00" href="https://www.instagram.com/cannabisativa.info/" target="_blank"><svg-icon
+                    type="mdi" :path="path4" class="mr-3"></svg-icon>CANNABISATIVA.INFO
+                </v-btn>
+              </div>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn text="Fechar" @click="isActive.value = false"></v-btn>
+              </v-card-actions>
+            </v-card>
+          </template>
+        </v-dialog>
       </div>
     </v-app-bar>
 
@@ -105,7 +104,7 @@
 
 
             <v-card-text>
-              <div class="ma-7 d-flex justify-space-between">
+              <div class="ma-7 d-flex justify-space-between" :class="smAndDown ? 'ma-7 d-flex justify-space-between' : ''">
                 <div style="width: 100px; height: 100px" class="elevation-15">
                   <v-img src="../src/assets/images/one.jpg" alt="buddie de cannabis" width="300" height="200"
                     class="rounded"></v-img>
@@ -311,9 +310,8 @@
 
         <v-container class="bg-green-darken-4 mt-7 pt-5 elevation-24 border rounded-xl">
 
-          <h2 
-          :class="smAndDown ? 'text-h6-center pl-5' : 'text-h5'"
-          class="font1 d-flex align-center justify-center w-45 border rounded-xl bg-black">O PRECONCEITO ACABA ONDE A
+          <h2 :class="smAndDown ? 'text-h6-center pl-5' : 'text-h5'"
+            class="font1 d-flex align-center justify-center w-45 border rounded-xl bg-black">O PRECONCEITO ACABA ONDE A
             COMPREENSÃO COMEÇA</h2>
 
           <br>
