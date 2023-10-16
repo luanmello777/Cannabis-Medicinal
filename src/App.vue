@@ -13,7 +13,7 @@
         <v-chip :class="smAndDown ? 'pl-16 pr-16 text-center justify-center' : 'mr-10'"
           class="chipcannabis  elevation-10 text-h5" size="x-large">
           <v-app-bar-title class="ml-10 mr-10">
-            <div :class="smAndDown ? 'text-h6-center' : 'text-h5'">
+            <div :class="smAndDown ? 'text-center justify-center' : 'text-h5'">
               <span class="font span">Cannabis
                 <svg-icon color="#C6FF00" type="mdi" :path="path"></svg-icon>
                 Medicinal</span>
