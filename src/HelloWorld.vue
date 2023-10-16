@@ -9,13 +9,13 @@
         :style="{ 'background-image': 'url(\'plant2.jpg\')', 'background-size': 'cover' }">
 
         <h2 class="font1 d-flex align-center justify-center text-white bg-black border rounded-xl"
-          :class="smAndDown ? '' : 'pl-5'">PATOLOGIAS TRATADAS COM A CANNABIS
+          :class="smAndDown ? 'pl-5' : ''">PATOLOGIAS TRATADAS COM A CANNABIS
         </h2>
 
         <br>
 
-        <v-card-text>
-          <div class="ma-7 d-flex justify-space-between">
+        
+          <div class="ma-7 d-flex justify-space-between" :class="smAndDown ? 'mr-auto ml-auto pb-3' : ''">
             <div style="width: 100px; height: 100px" class="elevation-15">
               <v-img src="../public/cancer.png" alt="cancer" width="100" height="100" class="rounded"></v-img>
 
@@ -132,10 +132,10 @@
 
             </div>
           </div>
-        </v-card-text>
-
-        <v-card-text>
-          <div class="ma-7 d-flex justify-space-between">
+        
+           <br>
+      
+          <div class="ma-7 d-flex justify-space-between" :class="smAndDown ? 'mr-auto ml-auto pb-3' : ''">
             <div style="width: 100px; height: 100px" class="elevation-15">
               <v-img src="../public/alzheimer.jpg" alt="buddie de cannabis" width="100" height="100"
                 class="rounded"></v-img>
@@ -256,12 +256,12 @@
 
             </div>
           </div>
-        </v-card-text>
       </v-container>
 
       <v-container class="bg-green-darken-4 mt-12 pt-5 elevation-24 border rounded-xl">
 
-        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black">COMO TER ACESSO AO TRATAMENTO ?
+        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black" :class="smAndDown ? 'pl-5' : ''">
+          COMO TER ACESSO AO TRATAMENTO ?
         </h2>
         <br>
         <h3 class="text-black">
@@ -286,8 +286,8 @@
         </h3>
         <br>
         <v-btn color="#C6FF00" href="https://amame.org.br/lista-de-prescritores-de-cannabis/" target="_blank"
-          class=" d-flex align-center justify-center"><span :class="smAndDown ? '' : 'small-text'">LISTA DE PRESCRITORES
-            DE CANNABIS MEDICINAL NO BRASIL</span></v-btn>
+          class=" d-flex align-center justify-center">LISTA DE PRESCRITORES
+            DE CANNABIS</v-btn>
         <br>
 
         <h2 class="font1">AUTORIZAÇÃO DA ANVISA :</h2>
@@ -299,12 +299,11 @@
         <br>
         <v-btn color="#C6FF00"
           href="https://www.gov.br/pt-br/servicos/solicitar-autorizacao-para-importacao-excepcional-de-produtos-a-base-de-canabidiol"
-          target="_blank" class=" d-flex align-center justify-center"><span
-            :class="smAndDown ? '' : 'small-text'">AUTORIZAÇÃO
-            PARA IMPORTAÇÃO DE CANNABIS
-            MEDICINAL</span></v-btn>
+          target="_blank" class=" d-flex align-center justify-center">
+          AUTORIZAÇÃO
+          PARA IMPORTAÇÃO</v-btn>
         <br>
-        <h2 class="font1">ACOMPANHAMENTO MÉDICO :</h2>
+        <h2 class="font1" :class="smAndDown ? 'ml-1' : ''">ACOMPANHAMENTO MÉDICO :</h2>
         <h3 class="text-black">O tratamento com cannabis medicinal deve ser constante e sempre seguido de acompanhamento
           médico. Como todo tratamento, cada pessoa tem o seu próprio tempo para reagir à medicação, enquanto algumas já
           sentem os benefícios nos primeiros dias, outras pessoas podem sentir melhorias a partir do segundo mês. Além
@@ -322,7 +321,7 @@
       <v-container class="bg-green-darken-4 mt-12 pt-5 elevation-24 border rounded-xl">
 
         <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black"><span
-            :class="smAndDown ? '' : 'pl-5'">AUMENTO NO NÚMERO DE IMPORTAÇÕES
+            :class="smAndDown ? 'pl-5' : ''">AUMENTO NO NÚMERO DE IMPORTAÇÕES
           </span></h2>
         <br>
         <h3 class="text-black">
@@ -343,7 +342,7 @@
 
 
         <h2 class="font1 d-flex align-center justify-center text-white bg-black border rounded-xl"><span
-            :class="smAndDown ? '' : 'pl-5'">VOCÊ SABIA QUE A MAIOR
+            :class="smAndDown ? 'pl-5' : ''">VOCÊ SABIA QUE A MAIOR
             PARTE DA POPULAÇÃO BRASILEIRA É A FAVOR DO USO MEDICINAL ?</span></h2>
 
         <br>
@@ -354,14 +353,15 @@
               canabinoide</span>. O levantamento realizado
             em 2021 contou com a participação de mil pessoas de todas as regiões do país.</h3>
 
-          <v-img src="../public/marcha.jpg" width="300"></v-img>
+          <v-img src="../public/marcha.jpg" width="300" :class="smAndDown ? 'w-0' : ''"></v-img>
         </div>
 
         <br>
 
         <v-dialog width="500">
           <template v-slot:activator="{ props }">
-            <v-btn color="#C6FF00" width="300" v-bind="props" text="Países legalizados"> </v-btn>
+            <v-btn color="#C6FF00" width="300" class="ml-16" v-bind="props" text="Países legalizados"
+              :class="smAndDown ? 'ml-auto' : ''"> </v-btn>
           </template>
 
           <template v-slot:default="{ isActive }">
@@ -425,7 +425,8 @@
         </h3>
         <br>
 
-        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black">IMPORTÂNCIA NA SOCIEDADE</h2>
+        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black" :class="smAndDown ? 'pl-5' : ''">
+          IMPORTÂNCIA NA SOCIEDADE</h2>
         <br>
         <h2 class="font1">TRATAMENTO ALTERNATIVO :</h2>
         <h3 class="text-black">A cannabis medicinal oferece uma alternativa para pacientes que não encontraram alívio com
@@ -496,7 +497,7 @@
 
         <br>
 
-        <h2 class="font1">ACEITAÇÃO INTERNACIONAL :</h2>
+        <h2 class="font1" :class="smAndDown ? 'ml-2' : ''">ACEITAÇÃO INTERNACIONAL :</h2>
         <h3 class="text-black">A legalização da cannabis medicinal em um número crescente de países está promovendo a
           aceitação internacional da planta como uma ferramenta terapêutica válida.
           A cannabis medicinal está desempenhando um papel cada vez mais importante no cenário médico e social, oferecendo
@@ -525,7 +526,7 @@
           <h1 class="mt-10">Dr. Vinicius Mesquita</h1>
         </h3>
 
-        <v-img src="../src/assets/images/logomed.jpg" width="300" height="300"></v-img>
+        <v-img src="../src/assets/images/logomed.jpg" width="300" height="300" :class="smAndDown ? 'w-0 h-0' : ''"></v-img>
 
       </v-container>
 
@@ -567,7 +568,7 @@ import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiCannabis, mdiGithub } from '@mdi/js';
 
 const { smAndDown } = useDisplay()
- 
+
 const path = mdiCannabis;
 const path1 = mdiGithub;
 const items = ['Estados Unidos', 'Israel', 'Colômbia', 'Holanda', 'México', 'Uruguai', 'Espanha', 'Alemanha']
