@@ -1,17 +1,18 @@
 <template>
   <v-app>
     <v-app-bar color="#1B5E20">
+      <div class="d-flex align-center justify-space-between w-100">
+      <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? 'mr-2 w-0' : 'ml-5'" width="45" height="50"></v-img>
 
-      <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? 'mr-2' : 'ml-5'"  height="55" width="55"></v-img>
-
+      <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
 
 
       <v-chip 
-      :class="smAndDown ? 'mr-2' : 'ml-10'"
+      :class="smAndDown ? 'pl-16 pr-16 text-center justify-center' : 'mr-10'"
       class="chipcannabis  elevation-10 text-h5" size="x-large">
-        <v-app-bar-title class="ml-5 mr-10">
+        <v-app-bar-title class="ml-10 mr-10">
           <div :class="smAndDown ? 'text-h6-center' : 'text-h5'">
             <span 
             class="font span"
@@ -29,7 +30,7 @@
 
       <v-dialog width="500">
         <template v-slot:activator="{ props }">
-          <v-btn :class="smAndDown ? 'mr-auto small' : 'large'"
+          <v-btn :class="smAndDown ? 'ml-8' : 'mr-10'"
             class="btnref border rounded-xl elevation-10 mr-10 bg-lime-accent-3" v-bind="props" text="Referência"></v-btn>
         </template>
 
@@ -53,7 +54,9 @@
           </v-card>
         </template>
       </v-dialog>
+      </div>
     </v-app-bar>
+
 
     <v-main>
 
