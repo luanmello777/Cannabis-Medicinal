@@ -29,7 +29,7 @@
 
         <v-dialog width="500">
           <template v-slot:activator="{ props }">
-            <v-btn :class="smAndDown ? 'mr-auto ml-2 ' : 'mr-10'"
+            <v-btn :class="smAndDown ? 'mr-2 ml-2 ' : 'mr-10'"
               class="border rounded-xl elevation-10 ml-10 bg-lime-accent-3" v-bind="props"><svg-icon type="mdi"
                 :path="path5"></svg-icon></v-btn>
           </template>
