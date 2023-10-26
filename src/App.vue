@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar color="#1B5E20">
       <div class="d-flex align-center justify-space-between w-100">
-        <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? 'mr-2 w-0 h-0' : 'ml-5'" width="45"
+        <v-img src="../src/assets/images/logomed.jpg" :class="smAndDown ? ' w-0 h-0 pl-0 pr-0' : 'ml-5'" width="45"
           height="50"></v-img>
 
         <v-spacer></v-spacer>
@@ -10,10 +10,10 @@
         <v-spacer></v-spacer>
 
 
-        <v-chip :class="smAndDown ? 'pl-16 pr-16 text-center justify-center' : 'mr-10'"
+        <v-chip :class="smAndDown ? 'w-100 text-center justify-center ml-2' : 'mr-10'"
           class="chipcannabis  elevation-10 text-h5" size="x-large">
           <v-app-bar-title class="ml-10 mr-10">
-            <div :class="smAndDown ? 'text-h6' : 'text-h5'">
+            <div :class="smAndDown ? 'pl-16 pr-16' : 'text-h5'">
               <span class="font">Cannabis
                 <svg-icon color="#C6FF00" type="mdi" :path="path"></svg-icon>
                 Medicinal</span>
@@ -29,7 +29,7 @@
 
         <v-dialog width="500">
           <template v-slot:activator="{ props }">
-            <v-btn :class="smAndDown ? 'mr-2 ml-2 ' : 'mr-10'"
+            <v-btn :class="smAndDown ? 'mr-2 ' : 'mr-10'"
               class="border rounded-xl elevation-10 ml-10 bg-lime-accent-3" v-bind="props"><svg-icon type="mdi"
                 :path="path5"></svg-icon></v-btn>
           </template>
@@ -103,7 +103,7 @@
             <h2 class="font1 d-flex align-center justify-center w-45 border rounded-xl bg-black">C A N A B I N Ó I D E S
             </h2>
 
-            <div class="ma-7 pb-5 d-flex justify-space-between" :class="smAndDown ? 'mr-auto ml-auto pb-3' : ''">
+            <div class="ma-7 pb-5 d-flex justify-space-between" :class="smAndDown ? 'ml-0 mr-0  pb-3' : ''">
               <div style="width: 100px; height: 100px" class="elevation-15" :class="smAndDown ? '' : ''">
                 <v-img src="../src/assets/images/one.jpg" alt="buddie de cannabis" width="300" height="300"
                   class="rounded"></v-img>
@@ -134,7 +134,7 @@
                 </v-dialog>
 
               </div>
-              <div style="width: 100px; height: 100px" class="elevation-15">
+              <div style="width: 100px; height: 100px" class="elevation-15" :class="smAndDown ? '' : ''" >
                 <v-img src="../src/assets/images/two.png" alt="buddie de cannabis" width="300" height="300"
                   class="rounded"></v-img>
 
@@ -164,7 +164,7 @@
                   </template>
                 </v-dialog>
               </div>
-              <div style="width: 100px; height: 100px" class="elevation-15">
+              <div style="width: 100px; height: 100px" class="elevation-15" :class="smAndDown ? '' : ''">
                 <v-img src="../src/assets/images/three.jpg" alt="buddie de cannabis" width="300" height="300"
                   class="rounded"></v-img>
 

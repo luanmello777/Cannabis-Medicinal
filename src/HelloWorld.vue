@@ -303,7 +303,7 @@
           AUTORIZAÇÃO
           PARA IMPORTAÇÃO</v-btn>
         <br>
-        <h2 class="font1" :class="smAndDown ? 'ml-1' : ''">ACOMPANHAMENTO MÉDICO :</h2>
+        <h2 class="font1" :class="smAndDown ? 'pl-2 pr-10' : ''">ACOMPANHAMENTO MÉDICO :</h2>
         <h3 class="text-black">O tratamento com cannabis medicinal deve ser constante e sempre seguido de acompanhamento
           médico. Como todo tratamento, cada pessoa tem o seu próprio tempo para reagir à medicação, enquanto algumas já
           sentem os benefícios nos primeiros dias, outras pessoas podem sentir melhorias a partir do segundo mês. Além
@@ -425,7 +425,7 @@
         </h3>
         <br>
 
-        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black" :class="smAndDown ? 'pl-5' : ''">
+        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black" :class="smAndDown ? 'ml-5 mr-5 pl-8' : ''">
           IMPORTÂNCIA NA SOCIEDADE</h2>
         <br>
         <h2 class="font1">TRATAMENTO ALTERNATIVO :</h2>
