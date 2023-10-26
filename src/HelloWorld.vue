@@ -425,7 +425,7 @@
         </h3>
         <br>
 
-        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black" :class="smAndDown ? 'ml-5 mr-5 pl-8' : ''">
+        <h2 class="font1 d-flex align-center justify-center border rounded-xl bg-black" :class="smAndDown ? 'pr-8 pl-8' : ''">
           IMPORTÂNCIA NA SOCIEDADE</h2>
         <br>
         <h2 class="font1">TRATAMENTO ALTERNATIVO :</h2>
